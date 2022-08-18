@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+    z-index: 1;
+    position: fixed;
+    background-color: #5993c4;
+    font-weight: 800;
+    box-shadow: 0 1px 0 black;
+  }
+  #navbar ul li {
+    display: inline-block;
+    padding: 1.8rem 0;
+  }
+  #navbar ul a {
+    text-decoration: none;
+    padding: 1.8rem 1rem;
+    margin: 0 0.5rem;
+  }
+  #navbar ul a:hover {
+    color: #1e81b0;
+  }
+  #welcome-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( #755cbf, #4d3566, black);
+  }
+  #welcome-section h1 {
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+  }
+  #welcome-section p {
+    font-size: 3rem;
+    color: black;
+    margin: 0.5rem 0;
+  }
+  #projects {
+    background-color: #0a749e;
+    padding: 4rem 2rem; 
+    text-align: center;
+  }
+  #projects h3 {
+    font-size: 3rem;
+    width: max-content;
+    margin: 0 auto 2.6rem auto;
+  }
+  #projects p {
+    color: white;
+  }
+  #projects a {
+    text-decoration: none;
+    margin: 0 0 5rem 0;
+    transition: background-color 0.4s ease-out;
+  }
+  .project-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  } 
+  .project-tile {
+    font-size: 2rem;
+    padding: 1.5rem 1rem;
+    background-color: #b190a0;
+    border-radius: 0 0 5px 5px;
+    transition: background-color 0.4s ease-out;
+  }
+  .project-tile:hover {
+    background-color: #710c0d;
+  }
+  .button {
+    padding: 0.6rem;
+    border-radius: 5px;
+  }
+  #repositories {
+    font-size: 2rem;
+    padding: 1.4rem;
+    background-color: #b190a0;
+    transition: background-color 0.4s ease-out;
+  }
+  #repositories:hover {
+    background-color: #710c0d;
+  }
+  #contact {
+    background-color: #0d3245;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  #contact-intro h2{
+    width: 100%;
+    padding: 1.4rem;
+    font-size: 7rem;
+    margin: 1rem auto;
+  }
+  #contact-intro p {
+    width: 100%;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+  }
+  .contact-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 0 3rem 0;
+    padding: 0 3rem;
+  }
+  .contact-links a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.4s ease-out;
+  }
+  .contact-links a:hover {
+    background-color: #167c8c;
+  }
+  .social-media {
+    margin: 0 0.8rem;
+    height: 1.5rem;
+  }
+  @media (max-width: 500px) {
+      #welcome-section h1 {
+        font-size: 3rem;
+      }
+      #welcome-section p {
+        font-size: 2rem;
+      }
+      .nav {
+        justify-content: center;
+      }
+      #contact-intro h2{
+        font-size: 4rem;
+      }
+      #contact-intro p {
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+        font-weight: 300;
+      }
+  }
+  
